@@ -1,0 +1,126 @@
+:root {
+    --grey-900: #141414;
+    --grey-800: #1f1f1f;
+    --grey-700: #333333;
+    --white: #ffffff;
+    --green: #c4f82a;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--white);
+    background-color: var(--grey-900);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  img {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .card {
+    width: 90vw;
+    background-color: var(--grey-800);
+    /* margin: 116.5px auto; */
+    padding: 24px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+  
+  .profile-img {
+    height: 88px;
+    width: 88px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .name-location {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4px; 
+  }
+   
+  
+  .name {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .location {
+    color: var(--green);
+    font-weight: 700;
+  }
+  
+  .job-title {
+    white-space: nowrap; /* Prevent the text from wrapping */
+    overflow: hidden; /* Hide the overflow text */
+    text-overflow: ellipsis; /* Add ellipsis (...) */
+    max-width: 100%; /* Ensure it respects the container's width */
+  }
+  
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+  }
+  
+  .button {
+    text-align: center;
+    font-weight: 600;
+    color: var(--white);
+    text-decoration: none; 
+    background-color: var(--grey-700);
+    border-radius: 8px;
+    padding: 12px 0 ;
+  }
+  
+  .button:hover{
+    background-color: var(--green);
+    color: var(--grey-700);
+  }
+  @media screen and (max-width: 340px) {
+    .job-title{
+      max-width: 200px;
+    }
+  }
+  
+  
+  @media screen and (min-width: 400px) {
+    .card{
+      padding: 40px;
+      max-width: 456px;
+    }
+  }
+  
+  @media screen and (min-width: 1025px) {
+    .card{
+      max-width: 384px;
+    }
+  }
