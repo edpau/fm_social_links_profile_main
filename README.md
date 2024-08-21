@@ -23,9 +23,7 @@ Users should be able to:
 - See hover and focus states for all interactive elements on the page
 
 ### Screenshot
-
-![](./assets/images/screenshot.png)
-<img src="./assets/images/screenshot.png" alt="Screenshot" width="400"/>
+<img src="./assets/images/screenshot.png" alt="Screenshot" width="300"/>
 
 ### Links
 
