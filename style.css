@@ -49,7 +49,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    gap: 24px;
   }
   
   .profile-img {
@@ -63,18 +63,21 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 4px; 
+    gap: 4px;
   }
    
   
   .name {
     font-size: 24px;
     font-weight: 600;
+    line-height: 1.5;
   }
   
   .location {
     color: var(--green);
     font-weight: 700;
+    line-height: 1.5;
+    font-size: 14px;
   }
   
   .job-title {
@@ -82,6 +85,7 @@
     overflow: hidden; /* Hide the overflow text */
     text-overflow: ellipsis; /* Add ellipsis (...) */
     max-width: 100%; /* Ensure it respects the container's width */
+    line-height: 1.5;
   }
   
   .links {
@@ -99,6 +103,7 @@
     background-color: var(--grey-700);
     border-radius: 8px;
     padding: 12px 0 ;
+    line-height: 1.5;
   }
   
   .button:hover{
