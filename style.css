@@ -99,23 +99,62 @@
     text-align: center;
     font-weight: 600;
     color: var(--white);
-    text-decoration: none; 
     background-color: var(--grey-700);
+    text-decoration: none; 
     border-radius: 8px;
     padding: 12px 0 ;
     line-height: 1.5;
+/* button animation */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.8s ease;
+    position: relative;
+    z-index: 1
   }
   
-  .button:hover{
+  .button::before,
+  .button::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  
+  .button {
+    overflow: hidden;
+    transition: all 300ms ease;
+  }
+  
+  .button:after {
+    width: 300%;
+    height: 300%;
+    left: -300%;
+    transform: rotate(15deg);
     background-color: var(--green);
+    transition: all 300ms ease;
+  }
+  
+  .button:hover {
     color: var(--grey-700);
   }
+  
+  .button:hover::after {
+    left: -100%;
+  }
+  
+  .button span {
+    position: relative;
+    z-index: 1; /* Higher than ::after */
+  }
+
   @media screen and (max-width: 340px) {
     .job-title{
       max-width: 200px;
     }
   }
-  
   
   @media screen and (min-width: 400px) {
     .card{
