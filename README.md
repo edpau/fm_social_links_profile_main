@@ -97,7 +97,7 @@ Users should be able to:
 
 ## Author
 
-- Website - [Edward Pau](https://www.your-site.com)
+- Website - [Edward Pau](https://www.edpau.me)
 - Frontend Mentor - [@edpau](https://www.frontendmentor.io/profile/edpau)
 
 
