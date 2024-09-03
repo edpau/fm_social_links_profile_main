@@ -42,7 +42,6 @@
   .card {
     width: 90vw;
     background-color: var(--grey-800);
-    /* margin: 116.5px auto; */
     padding: 24px;
     border-radius: 12px;
     display: flex;
@@ -93,6 +92,7 @@
     flex-direction: column;
     gap: 16px;
     width: 100%;
+    list-style-type: none;
   }
   
   .button {
